@@ -1,0 +1,77 @@
+{
+  "entities": {
+    "CustomImage": {
+      "title": "Custom Image",
+      "description": "Stores custom images for products and the site banner.",
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "The unique identifier for the image (e.g., product ID or 'banner')."
+        },
+        "url": {
+          "type": "string",
+          "description": "The base64 data URL of the custom image."
+        },
+        "updatedAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "The timestamp when the image was last updated."
+        }
+      },
+      "required": ["id", "url", "updatedAt"]
+    },
+    "ProductDetail": {
+      "title": "Product Detail",
+      "description": "Stores detailed text information for each product.",
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "The unique identifier for the product."
+        },
+        "text": {
+          "type": "string",
+          "description": "The detailed text content for the product."
+        },
+        "updatedAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "The timestamp when the details were last updated."
+        }
+      },
+      "required": ["id", "text", "updatedAt"]
+    },
+    "CalorieScan": {
+      "title": "Calorie Scan",
+      "description": "Stores nutritional analysis of food images.",
+      "type": "object",
+      "properties": {
+        "userId": { "type": "string" },
+        "imageUrl": { "type": "string" },
+        "totalCalories": { "type": "number" },
+        "protein": { "type": "number" },
+        "carbs": { "type": "number" },
+        "fats": { "type": "number" },
+        "items": { "type": "array", "items": { "type": "object" } },
+        "healthTip": { "type": "string" },
+        "createdAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["userId", "imageUrl", "totalCalories", "createdAt"]
+    }
+  },
+  "firestore": {
+    "/custom_images/{imageId}": {
+      "schema": "CustomImage",
+      "description": "Collection of custom images indexed by their ID."
+    },
+    "/product_details/{productId}": {
+      "schema": "ProductDetail",
+      "description": "Collection of detailed product information indexed by product ID."
+    },
+    "/calorie_scans/{scanId}": {
+      "schema": "CalorieScan",
+      "description": "Collection of nutritional scans performed by users."
+    }
+  }
+}

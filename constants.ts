@@ -182,7 +182,7 @@ export const PRODUTOS: Produto[] = [
     categoria: 'Saúde',
     descricao: 'Suplemento de ferro associado à vitamina C para melhor absorção. Auxilia na prevenção da anemia e no transporte de oxigênio.',
     beneficio: 'Combate à anemia e mais energia.',
-    linkMercadoLivre: 'https://lista.mercadolivre.com.br/ferro-c-nutrye',
+    linkMercadoLivre: 'https://www.mercadolivre.com.br/ferro-vitamina-c-60-capsulas-nutrye-sem-sabor/p/MLB65495774?pdp_filters=seller_id%3A2004278488#polycard_client=search-desktop&be_origin=backend&search_layout=grid&position=10&type=product&tracking_id=6d2fbdd8-e705-4143-89ec-11884d33cdcf&wid=MLB6768491164&sid=search',
     imagem: 'https://i.ibb.co/bR28F51c/ferro-c.jpg',
     detalhes: 'Ferro + C Nutrye combina o mineral ferro com Vitamina C, que potencializa sua absorção. Ideal para prevenir anemias ferroprivas e garantir o transporte eficiente de oxigênio para todos os tecidos.'
   },
@@ -192,7 +192,7 @@ export const PRODUTOS: Produto[] = [
     categoria: 'Saúde',
     descricao: 'Combinação essencial para o fortalecimento do sistema imunológico e ação antioxidante no organismo.',
     beneficio: 'Imunidade fortalecida.',
-    linkMercadoLivre: 'https://lista.mercadolivre.com.br/zinco-c-nutrye',
+    linkMercadoLivre: 'https://www.mercadolivre.com.br/vitamina-c-e-zinco-nutrye-1000mg-60-capsulas-sem-gluten-suplemento/p/MLB20613367?pdp_filters=seller_id%3A2004278488#polycard_client=search-desktop&be_origin=backend&search_layout=grid&position=8&type=product&tracking_id=1b8a90f3-85f3-4050-8429-258a8c8cf024&wid=MLB6534657568&sid=search',
     imagem: 'https://i.ibb.co/1YQ3BKVF/zinco-c.jpg',
     detalhes: 'Zinco + C é a dupla dinâmica para a imunidade. O zinco atua em centenas de reações enzimáticas, enquanto a Vitamina C oferece proteção antioxidante, mantendo o organismo protegido contra agentes externos.'
   },
